@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar with Hamburger</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <i class="fas fa-utensils"></i>
+      MyRestaurant
+    </div>
+
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn">Book a Table</a>
+    </div>
+  </nav>
+
+ <section class="home" id="home">
+  <div class="home-content">
+    <div class="text" data-aos="fade-right" data-aos-delay="200">
+      <h1>Enjoy Our Delicious Meal</h1>
+      <p>We serve fresh and tasty food made with love. Come and experience a delightful dining atmosphere with us.</p>
+      <a href="#" class="btn">Book a Table</a>
+    </div>
+    <div class="image" data-aos="fade-left" data-aos-delay="400">
+      <img src="imges/—Pngtree—delicious fast food chicken tenders_20728712.png" alt="Delicious Meal" />
+    </div>
+  </div>
+</section>
+
+
+  <section id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-down" data-aos-delay="100">
+      <i class="fas fa-user-tie"></i>
+      <h3>Master Chef</h3>
+      <p>Our master chefs craft delicious dishes with passion and skill to serve you the best flavors.</p>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-delay="200">
+      <i class="fas fa-utensils"></i>
+      <h3>Quality Food</h3>
+      <p>We use only fresh and high-quality ingredients to ensure every bite delights your taste buds.</p>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-delay="300">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>Online Order</h3>
+      <p>Order your favorite meals online with ease and enjoy quick doorstep delivery every time.</p>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-delay="400">
+      <i class="fas fa-concierge-bell"></i>
+      <h3>24/7 Services</h3>
+      <p>Our dedicated team is available 24/7 to cater to your cravings, any time of day or night.</p>
+    </div>
+  </div>
+
+  <!-- about-extra -->
+  <div class="about-extra">
+    <div class="images" data-aos="fade-up" data-aos-delay="500">
+      <img src="imges/images (4).jpeg" alt="Food 1" />
+      <img src="imges/images (5).jpeg" alt="Food 2" />
+      <img src="imges/images (6).jpeg" alt="Food 3" />
+      <img src="imges/images (3).jpeg" alt="Food 4" />
+    </div>
+
+    <div class="about-content" data-aos="fade-up" data-aos-delay="600">
+      <h2>About Us</h2>
+      <h3>Welcome to My Restaurant <i class="fas fa-utensils"></i></h3>
+      <p>
+        Welcome to our restaurant, where taste meets passion! We serve the best dishes prepared by master chefs,
+        using the freshest ingredients and authentic recipes to satisfy every craving.
+      </p>
+
+      <div class="experience">
+        <div class="exp-item">
+          <h4>12</h4>
+          <p>Years of Experience</p>
+        </div>
+        <div class="exp-item">
+          <h4>39</h4>
+          <p>Popular Chefs</p>
+        </div>
+      </div>
+
+      <button class="read-more">Read More</button>
+    </div>
+  </div>
+</section>
+
+<!-- //services section -->
+ <section id="services">
+  <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+  <div class="services-container">
+    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-concierge-bell"></i>
+      <h3>Dine-In</h3>
+      <p>Enjoy delicious meals in a cozy, family-friendly atmosphere with top-notch service.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-shopping-bag"></i>
+      <h3>Takeaway</h3>
+      <p>Grab your favorite dishes to-go — fresh, quick, and packed perfectly for home.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-truck"></i>
+      <h3>Delivery</h3>
+      <p>Fast and safe food delivery to your doorstep — hot meals, always on time.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+      <i class="fas fa-birthday-cake"></i>
+      <h3>Event Catering</h3>
+      <p>We cater special events with customized menus to make your gatherings memorable.</p>
+    </div>
+  </div>
+</section>
+
+ <!-- end services section -->
+  <!-- menu section start -->
+   <section id="menu">
+  <h2 class="section-title" data-aos="fade-up">Our Menu</h2>
+
+  <div class="menu-tabs" data-aos="fade-up" data-aos-delay="100">
+    <button class="tab active" data-category="fastfood">Fast Food</button>
+    <button class="tab" data-category="chinese">Chinese</button>
+    <button class="tab" data-category="desi">Desi Food</button>
+  </div>
+
+  <div class="menu-items">
+    <!-- Fast Food Items -->
+    <div class="menu-card" data-category="fastfood" data-aos="zoom-in" data-aos-delay="100">
+      <img src="imges/fast-1.jpeg" alt="Burger" />
+      <h3>Burger</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="fastfood" data-aos="zoom-in" data-aos-delay="200">
+      <img src="imges/fast-2.jpeg" alt="Sandwich" />
+      <h3>Sandwich</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="fastfood" data-aos="zoom-in" data-aos-delay="300">
+      <img src="imges/fast-3.jpeg" alt="Pizza" />
+      <h3>Pizza</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="fastfood" data-aos="zoom-in" data-aos-delay="400">
+      <img src="imges/fast-4.jpeg" alt="Tikka" />
+      <h3>Tikka</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Chinese Items -->
+    <div class="menu-card" data-category="chinese" data-aos="zoom-in" data-aos-delay="500">
+      <img src="imges/chinees-1.jpeg" alt="Noodles" />
+      <h3>Chinese Noodles</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="chinese" data-aos="zoom-in" data-aos-delay="600">
+      <img src="imges/chinees-2.jpeg" alt="Manchurian" />
+      <h3>Chicken Manchurian</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="chinese" data-aos="zoom-in" data-aos-delay="700">
+      <img src="imges/chinees-3.jpeg" alt="Manchurian" />
+      <h3>Nodels</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="chinese" data-aos="zoom-in" data-aos-delay="800">
+      <img src="imges/chinees-4.jpeg" alt="Manchurian" />
+      <h3>Kimchi</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Desi Items -->
+    <div class="menu-card" data-category="desi" data-aos="zoom-in" data-aos-delay="900">
+      <img src="imges/dasi-1.jpeg" alt="Biryani" />
+      <h3>Beef Paya</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="desi" data-aos="zoom-in" data-aos-delay="1000">
+      <img src="imges/dasi-2.jpeg" alt="Karahi" />
+      <h3>Mutton Nehari</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="desi" data-aos="zoom-in" data-aos-delay="1100">
+      <img src="imges/dasi-3.jpeg" alt="Karahi" />
+      <h3>Chicken Karahi</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="menu-card" data-category="desi" data-aos="zoom-in" data-aos-delay="1200">
+      <img src="imges/dasi-4.jpeg" alt="Karahi" />
+      <h3>Reshmi Boti</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero aliquam tempora obcaecati earum incidunt, eaque labore dolorum ipsum molestias eum adipisci expedita ab. </p>
+      <div class="menu-extra">
+        <span class="price">Rs 850</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- menu section end -->
+    <!-- //contact section start -->
+   <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-image" data-aos="fade-right" data-aos-delay="200">
+      <img src="imges/burgr-fries.avif" alt="Contact Image" />
+    </div>
+    <div class="contact-content" data-aos="fade-left" data-aos-delay="400">
+      <h2>Contact Us</h2>
+      <form id="contactForm" data-aos="zoom-in" data-aos-delay="600">
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="E-mail" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Contact Us</button>
+      </form>
+      <div class="contact-info" data-aos="fade-up" data-aos-delay="800">
+        <p><strong>Contact</strong><br>hi@restaurant.com</p>
+        <p><strong>Based in</strong><br>San Francisco, California</p>
+        <div class="socials">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer sec start -->
+ <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about" data-aos="fade-up">
+      <h3>My Restaurant</h3>
+      <p>
+        Serving delicious meals with love and passion. Join us for a delightful dining experience!
+      </p>
+    </div>
+
+    <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact" data-aos="fade-up" data-aos-delay="200">
+      <h4>Contact Us</h4>
+      <p>Email: hi@restaurant.com</p>
+      <p>Phone: +1 234 567 890</p>
+      <p>Address: 123 Food Street, San Francisco, CA</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300">
+    <p>© 2025 My Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+ <!-- footer end start -->
+  <!-- Scroll to Top Button -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<script>
+  AOS.init({
+    duration: 1200,
+    once: false,
+    easing: 'ease-in-out'
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
